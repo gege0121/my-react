@@ -3,9 +3,16 @@
 import React from 'react';
 
 class Users extends React.Component{
+    state ={
+        name: 'gege',
+        age: 25
+    }
     render(){
         return(
-            <h1> Users class component</h1>
+            <div>
+            <h1> {this.state.name}</h1>
+            <h2>{this.state.age}</h2>
+            </div>
         );
     }
 }
