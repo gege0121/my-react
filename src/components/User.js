@@ -1,3 +1,4 @@
+// functional component
 import react from 'react';
 
 function User(){
