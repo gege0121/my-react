@@ -19,8 +19,8 @@ class Users extends React.Component{
         console.log('after change',this.data.city);
     }
 
-    changeMyAge=()=>{
-        this.setState({age:21 });
+    changeMyAge=(newAge)=>{
+        this.setState({age:newAge });
 
     }
 
@@ -31,7 +31,7 @@ class Users extends React.Component{
             <div>
             <h1> {this.state.name}</h1>
             <h2>{this.state.age}</h2>
-            <button onClick={this.changeMyAge}>Change My Age</button>
+            <button onClick={()=>this.changeMyAge('21')}>Change My Age</button>
             <hr/>
             <h3>{this.data.city}</h3>
             <button onClick={this.changeMyCity}>Change My City</button>
