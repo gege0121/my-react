@@ -12,6 +12,10 @@ class Users extends React.Component{
         city: 'Falls Church'
     }
 
+    handleNameChange=(event)=>{
+        this.setState({name:event.target.value });
+    }
+
     changeMyCity=()=>{
         console.log('change my city from here');
         console.log('before change', this.data.city);
@@ -28,8 +32,9 @@ class Users extends React.Component{
     render(){
         console.log('Im a render()');
         return(
-            <div>
+            <div className="Users">
             <h1> {this.state.name}</h1>
+            <input type="text" onChange={this.handleNameChange} value={this.state.name} />
             <h2>{this.state.age}</h2>
             <button onClick={()=>this.changeMyAge('21')}>Change My Age</button>
             <hr/>
