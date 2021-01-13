@@ -3,9 +3,8 @@ import React from 'react';
 export default function Book(props){
     return(
         <div className='book'>
-            <h1>{props.name}</h1>
-            <button onClick={()=>props.showRating(5)}> ShowRating</button>
-           
+            <h1>{props.book.name}</h1>
+           <h3>{props.book.rating}</h3>
         </div>
     );
 }

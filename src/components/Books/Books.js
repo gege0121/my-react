@@ -20,7 +20,7 @@ handleNameChange =(event)=>{
 handleAddChange =()=>{
     const updatedBooks=this.state.books;
     updatedBooks.push({name:this.state.name,rating:this.state.rating});
-    console.log('updatedBooks',updatedBooks);
+    this.setState({books:updatedBooks});
 }
 
     render(){
@@ -31,6 +31,11 @@ handleAddChange =()=>{
                 <input type="text" placeholder='Enter book rate' onChange={this.handleRatingChange}/>
                 <button onClick={this.handleAddChange}>Add</button>
 
+                </div>
+                <div>
+                    {
+                        this.state.books.map(book =><Book book={book}/>)
+                    }
                 </div>
             </div>
         )
