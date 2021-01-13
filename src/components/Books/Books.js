@@ -20,15 +20,15 @@ handleNameChange =(event)=>{
 handleAddChange =()=>{
     const updatedBooks=this.state.books;
     updatedBooks.push({name:this.state.name,rating:this.state.rating});
-    this.setState({books:updatedBooks});
+    this.setState({books:updatedBooks, name:'', rating:''});
 }
 
     render(){
         return(
             <div className='books'> 
             <div className='add-books'>
-                <input type="text" placeholder='Enter book name' onChange={this.handleNameChange}/>
-                <input type="text" placeholder='Enter book rate' onChange={this.handleRatingChange}/>
+                <input type="text" placeholder='Enter book name' onChange={this.handleNameChange} value={this.state.name}/>
+                <input type="text" placeholder='Enter book rate' onChange={this.handleRatingChange} value={this.state.rating}/>
                 <button onClick={this.handleAddChange}>Add</button>
 
                 </div>
