@@ -4,8 +4,8 @@ import React from 'react';
 
 class Users extends React.Component{
     state ={
-        name: 'gege',
-        age: 25
+        name: '',
+        age: 12
     }
 
     data={
