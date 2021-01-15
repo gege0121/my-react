@@ -44,8 +44,8 @@ handleDelete=(deletebook)=>{
                 </div>
                 <div>
                     {
-                        this.state.books.map(book =><Book book={book} deleteBook={this.handleDelete} key={this.state.name}/>)
-                    }
+                        this.state.books.map((book, index) =>(<Book book={book} deleteBook={this.handleDelete} key={index}/>)
+                        )}
                 </div>
             </div>
         )

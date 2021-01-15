@@ -22,7 +22,6 @@ class Calculator extends React.Component{
     handleAdd=(number1,nubmer2)=>{
       
        this.setState({result:this.state.number1 + this.state.number2})
-       console.log(this.state.result)
 
     }
  
