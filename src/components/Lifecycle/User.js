@@ -9,7 +9,7 @@ componentDidMount(){
         console.log('Render');
         return (
             <div>
-                <h1>I am a user</h1>
+                <h1>I am a user! My name is {this.props.name}</h1>
             </div>
         );
     }
