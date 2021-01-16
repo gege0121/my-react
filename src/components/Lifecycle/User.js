@@ -2,7 +2,22 @@ import React, { Component } from 'react';
 
 class User extends Component {
 componentDidMount(){
-    console.log(1);
+    console.log('component did mount');
+}
+
+componentDidUpdate(){
+    console.log('component did update');
+}
+
+shouldComponentUpdate(){
+    console.log('should component update');
+    if(this.props.name===''){
+        return true;
+    }
+    else{
+        return false;
+    }
+   
 }
 
     render() {
@@ -15,4 +30,4 @@ componentDidMount(){
     }
 }
 
-export default User;
+export default User;  
