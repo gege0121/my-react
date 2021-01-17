@@ -16,7 +16,11 @@ class Users extends Component {
         return (
             <div>
                 <h1>Users component</h1>
-                <User name={this.state.name}/>
+                {
+                    this.state.name==='gg' ?  <User name={this.state.name}/> : null
+                    
+                }
+                
                 <button onClick={this.changeName}>Change Name</button>
             </div>
         );

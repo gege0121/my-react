@@ -1,12 +1,12 @@
 
 import './App.css';
 
-import Users from './components/Lifecycle/Users';
+import Sync from './components/Sync/Sync';
 
 function App() {
   return (
     <div className="App">
-      <Users />
+      <Sync />
     </div>
   );
 }

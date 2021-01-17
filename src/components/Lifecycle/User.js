@@ -9,15 +9,19 @@ componentDidUpdate(){
     console.log('component did update');
 }
 
-shouldComponentUpdate(){
-    console.log('should component update');
-    if(this.props.name===''){
-        return true;
-    }
-    else{
-        return false;
-    }
+// shouldComponentUpdate(){
+//     console.log('should component update');
+//     if(this.props.name===''){
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }
    
+// }
+
+componentWillUnmount(){
+    console.log('componentWillUnmount');
 }
 
     render() {
